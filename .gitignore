@@ -12,3 +12,5 @@ hf-cache/
 *.wav
 *.mp4
 .env
+
+_workspace/
