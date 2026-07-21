@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& C:\\\\works\\\\myAgent\\\\.venv\\\\Scripts\\\\python.exe C:\\\\works\\\\myAgent\\\\gemma4.py \"RAM ���࿡ ���� ª�� ��� �ϳ���.\")",
+      "PowerShell(Get-Process | Sort-Object -Property WorkingSet64 -Descending | Select-Object -First 12 Name, @{n='MB';e={[math]::Round\\($_.WorkingSet64/1MB\\)}} | Format-Table -AutoSize; \"---\"; $os=Get-CimInstance Win32_OperatingSystem; \"committed_GB: {0:N1} / limit_GB: {1:N1}\" -f \\(\\($os.TotalVisibleMemorySize-$os.FreePhysicalMemory\\)/1MB\\), \\($os.TotalVirtualMemorySize/1MB\\))",
+      "PowerShell(& C:\\\\works\\\\myAgent\\\\.venv\\\\Scripts\\\\python.exe \"C:\\\\Users\\\\WIZELY~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--works-myAgent\\\\900a8943-a424-4113-8cc3-9e550b9b9740\\\\scratchpad\\\\probe.py\"; \"exit=$LASTEXITCODE\")",
+      "PowerShell($env:PYTHONFAULTHANDLER=\"1\"; $env:HF_HUB_DISABLE_SYMLINKS_WARNING=\"1\"; $env:TRANSFORMERS_VERBOSITY=\"debug\"; & C:\\\\works\\\\myAgent\\\\.venv\\\\Scripts\\\\python.exe -X faulthandler -u \"C:\\\\Users\\\\WIZELY~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--works-myAgent\\\\900a8943-a424-4113-8cc3-9e550b9b9740\\\\scratchpad\\\\loadtest.py\"; \"exit=$LASTEXITCODE\")",
+      "PowerShell($env:HF_HUB_DISABLE_SYMLINKS_WARNING=\"1\"; & C:\\\\works\\\\myAgent\\\\.venv\\\\Scripts\\\\python.exe -u C:\\\\works\\\\myAgent\\\\gemma4.py --max-new-tokens 120 \"RAM 절약에 대한 짧은 농담 하나만.\"; \"exit=$LASTEXITCODE\")",
+      "PowerShell($env:HF_HUB_DISABLE_SYMLINKS_WARNING=\"1\"; & C:\\\\works\\\\myAgent\\\\.venv\\\\Scripts\\\\python.exe -u C:\\\\works\\\\myAgent\\\\gemma4.py --image C:\\\\works\\\\myAgent\\\\testimg.png --max-new-tokens 80 \"이 이미지에 뭐가 보이는지 한 문장으로.\" 2>$null)",
+      "PowerShell($env:HF_HUB_DISABLE_SYMLINKS_WARNING=\"1\"; & C:\\\\works\\\\myAgent\\\\.venv\\\\Scripts\\\\python.exe -u C:\\\\works\\\\myAgent\\\\gemma4.py --think --max-new-tokens 300 \"9.11 과 9.9 중 어느 것이 더 큰가?\" 2>$null)"
+    ],
+    "additionalDirectories": [
+      "D:\\"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+# torch/torchvision 은 CPU 빌드로 (NVIDIA GPU 없음):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# torchvision 은 Gemma4ImageProcessor 가 직접 임포트하므로 필수다.
+transformers>=5.5
+accelerate
+pillow
+soundfile

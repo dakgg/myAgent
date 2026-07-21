@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+# 모델 가중치·HF 캐시 (기본 위치는 D:\hf-cache 이지만 혹시 몰라)
+hf-cache/
+*.safetensors
+*.gguf
+
+# 로컬 실행 부산물
+*.png
+*.wav
+*.mp4
+.env
