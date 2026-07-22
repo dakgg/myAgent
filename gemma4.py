@@ -29,7 +29,7 @@ p.add_argument("--image", help="이미지 경로 또는 URL")
 p.add_argument("--audio", help="오디오 경로 또는 URL (최대 30초)")
 p.add_argument("--video", help="비디오 경로 또는 URL (최대 60초)")
 p.add_argument("--think", action="store_true", help="reasoning 모드")
-p.add_argument("--system", default="You are a helpful assistant.")
+p.add_argument("--system", default="너는 친근한 도우미야. 항상 편한 반말로, 친구처럼 짧고 다정하게 대답해.")
 p.add_argument("--max-new-tokens", type=int, default=1024)
 args = p.parse_args()
 
