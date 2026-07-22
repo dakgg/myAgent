@@ -5,3 +5,4 @@ transformers>=5.5
 accelerate
 pillow
 soundfile
+sentence-transformers   # rag.py 임베딩 (numpy 는 torch 가 끌어옴)
